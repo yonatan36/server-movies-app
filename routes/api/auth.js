@@ -63,6 +63,12 @@ router.put(
   permissionsMiddleware(false, false, true),
   async (req, res) => {
     try {
+      const userData = await userAccessDataService.getUserByEmail(
+        req.body.email
+      );
+      if (!userData) {
+        throw new CustomError("invalid email and/or password");
+      }
       let updateNormalUser = await normalizeUser(req.body, req.userData._id);
       const id = req.params.id;
       await idValidationServise.idValidation(id);
@@ -72,6 +78,11 @@ router.put(
         id,
         updateNormalUser
       );
+      // const token = await jwt.generateToken({
+      //   _id: userData._id,
+      //   isAdmin: userData.isAdmin,
+      //   isBusiness: userData.isBusiness,
+      // });
       res.status(200).json({
         msg: `user - ${updateUser.name.firstName} ${updateUser.name.lastName} update!`,
       });
