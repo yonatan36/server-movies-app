@@ -8,15 +8,15 @@ const initialData = require("./initialData/initialData");
 const apiRouter = require("./routes/api");
 const loggersService = require("./utils/loggers/loggerServise");
 
+const origin = process.env.ORIGIN;
+const port = process.env.PORT;
+
 var app = express();
 
 app.use(
   cors({
-    origin: [
-      "http://127.0.0.1:5500",
-      "http://localhost:3000",
-      "http://localhost:8181",
-    ],
+    credentials: true,
+    origin,
     optionsSuccessStatus: 200,
   })
 );
