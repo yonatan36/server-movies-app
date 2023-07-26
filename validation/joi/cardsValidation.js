@@ -4,7 +4,13 @@ const createCardSchema = Joi.object({
   title: Joi.string().min(2).max(256).required(),
   subTitle: Joi.string().min(2).max(256).required(),
   description: Joi.string().min(2).max(1024).required(),
-  createdYear: Joi.number().allow(""),
+  createdYear: Joi.number().min(1000).max(9999).required().messages({
+    "number.base": `createdYear: Please enter a valid number.`,
+    "number.integer": `createdYear: Please enter an integer (no decimal places).`,
+    "number.min": `createdYear: Please enter min 4 numbers.`,
+    "number.max": `createdYear: Please enter max 4 numbers.`,
+    "any.required": `createdYear: This field is required.`,
+  }),
 
   web: Joi.string()
     .regex(

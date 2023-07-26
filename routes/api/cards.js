@@ -12,13 +12,12 @@ const authmw = require("../../middleware/authMiddleware");
 router.post("/", authmw, async (req, res) => {
   try {
     let normalCard = await normalizeCard(req.body, req.userData._id);
-
+    await cardsValidationServise.createCardValidation(req.body);
     await normalizeCard(req.body, req.userData._id);
     await cardAccessDataService.createCard(normalCard);
     res.status(200).json();
   } catch (err) {
     res.status(400).json(err.message);
-    console.log(err.message);
   }
 });
 
@@ -68,9 +67,7 @@ router.get("/my-cards", authmw, async (req, res) => {
 //get all cards
 router.get("/", async (req, res) => {
   try {
-    await cardsValidationServise.createCardValidation();
     const allCards = await cardAccessDataService.getAllCards();
-
     res.status(200).json(allCards);
   } catch (err) {
     res.status(400).json(err.message);
