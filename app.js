@@ -1,33 +1,25 @@
-const express = require("express");
-const path = require("path");
-const cookieParser = require("cookie-parser");
-const cors = require("cors");
+var express = require("express");
+var path = require("path");
+var cookieParser = require("cookie-parser");
+var cors = require("cors");
 const initialData = require("./initialData/initialData");
+// var indexRouter = require("./routes/index");
+// var usersRouter = require("./routes/users");
 const apiRouter = require("./routes/api");
 const loggersService = require("./utils/loggers/loggerServise");
 
-// Define an array of allowed origins
-const allowedOrigins = [
-  process.env.ORIGIN,
-  "http://127.0.0.1:5500",
-  "http://localhost:3000",
-  "http://localhost:8181",
-];
-
-// Create the `origin` variable by finding the first non-null origin from the array
-const origin =
-  allowedOrigins.find((value) => value != null) || "http://localhost:3000";
-
-const app = express();
+var app = express();
 
 app.use(
   cors({
-    origin,
-    credentials: true,
+    origin: [
+      "http://127.0.0.1:5500",
+      "http://localhost:3000",
+      "http://localhost:8181",
+    ],
     optionsSuccessStatus: 200,
   })
 );
-
 app.use(loggersService.logger); // Specify the "combined" format
 
 app.use(express.json());
