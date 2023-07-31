@@ -7,7 +7,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/home1.jpg",
+      url: "/assets/home1.jpg",
       alt: "alalla",
     },
   },
@@ -19,7 +19,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/home2.jpg",
+      url: "/assets/home2.jpg",
       alt: "alalla",
     },
   },
@@ -31,7 +31,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/home3.jpg",
+      url: "/assets/home3.jpg",
       alt: "alalla",
     },
   },
@@ -43,7 +43,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/home4.jpg",
+      url: "/assets/home4.jpg",
       alt: "alalla",
     },
   },
@@ -55,7 +55,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/slide1.png",
+      url: "/assets/slide1.png",
       alt: "alalla",
     },
   },
@@ -67,7 +67,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/slide3.jpg",
+      url: "/assets/slide3.jpg",
       alt: "alalla",
     },
   },
@@ -79,7 +79,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/slide2.jpg",
+      url: "/assets/slide2.jpg",
       alt: "alalla",
     },
   },
@@ -91,7 +91,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/u1.jpg",
+      url: "/assets/u1.jpg",
       alt: "alalla",
     },
   },
@@ -103,7 +103,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/u6.png",
+      url: "/assets/u6.png",
       alt: "alalla",
     },
   },
@@ -115,7 +115,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:8181/assets/u3.jpg",
+      url: "/assets/u3.jpg",
       alt: "alalla",
     },
   },
@@ -128,7 +128,7 @@ const cards = [
     createdYear: "2000",
 
     image: {
-      url: "http://localhost:8181/assets/u4.jpg",
+      url: "/assets/u4.jpg",
       alt: "alalla",
     },
   },
@@ -141,7 +141,7 @@ const cards = [
     createdYear: "2000",
 
     image: {
-      url: "http://localhost:8181/assets/u7.jpg",
+      url: "/assets/u7.jpg",
       alt: "alalla",
     },
   },
