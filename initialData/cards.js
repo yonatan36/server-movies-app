@@ -1,5 +1,77 @@
 const cards = [
   {
+    title: "Sands of Destiny",
+    subTitle: "sub card 1",
+    description:
+      "A gripping tale of survival in a world plagued by sand and dust storms.",
+    phone: "0500000000",
+    createdYear: "2000",
+    image: {
+      url: "assets/home1.jpg",
+      alt: "alalla",
+    },
+  },
+  {
+    title: "Skull Island",
+    subTitle: "sub card 2",
+    description:
+      "Uncover the secrets of a legendary island inhabited by ancient creatures.",
+    phone: "0500000000",
+    createdYear: "2000",
+    image: {
+      url: "assets/home2.jpg",
+      alt: "alalla",
+    },
+  },
+  {
+    title: "Pirates of Seve",
+    subTitle: "sub card 3",
+    description:
+      "Embark on a thrilling adventure across treacherous waters with ruthless pirates vying for treasures.",
+    phone: "0500000000",
+    createdYear: "2000",
+    image: {
+      url: "assets/home3.jpg",
+      alt: "alalla",
+    },
+  },
+  {
+    title: "The Enigma Card",
+    subTitle: "sub card 3",
+    description:
+      "When a group of friends is catapulted through time, they must navigate different eras to find their way back home.",
+    phone: "0500000000",
+    createdYear: "2000",
+    image: {
+      url: "assets/home4.jpg",
+      alt: "alalla",
+    },
+  },
+  {
+    title: "Lost in Time",
+    subTitle: "sub card 3",
+    description:
+      "When a group of friends is catapulted through time, they must navigate different eras to find their way back home.",
+    phone: "0500000000",
+    createdYear: "2000",
+    image: {
+      url: "assets/slide1.png",
+      alt: "alalla",
+    },
+  },
+  {
+    title: "Jumbo Queen",
+    subTitle: "sub card 3",
+    description:
+      "Witness the courageous battle of a brave queen leading her people against towering giants.",
+    phone: "0500000000",
+    createdYear: "2000",
+    image: {
+      url: "assets/slide3.jpg",
+      alt: "alalla",
+    },
+  },
+  {
     title: "Chronicles of Destiny",
     subTitle: "sub card 3",
     description:
@@ -70,78 +142,6 @@ const cards = [
 
     image: {
       url: "assets/u7.jpg",
-      alt: "alalla",
-    },
-  },
-  {
-    title: "Sands of Destiny",
-    subTitle: "sub card 1",
-    description:
-      "A gripping tale of survival in a world plagued by sand and dust storms.",
-    phone: "0500000000",
-    createdYear: "2000",
-    image: {
-      url: "assets/home1.jpg",
-      alt: "alalla",
-    },
-  },
-  {
-    title: "Skull Island",
-    subTitle: "sub card 2",
-    description:
-      "Uncover the secrets of a legendary island inhabited by ancient creatures.",
-    phone: "0500000000",
-    createdYear: "2000",
-    image: {
-      url: "assets/home2.jpg",
-      alt: "alalla",
-    },
-  },
-  {
-    title: "Pirates of Seve",
-    subTitle: "sub card 3",
-    description:
-      "Embark on a thrilling adventure across treacherous waters with ruthless pirates vying for treasures.",
-    phone: "0500000000",
-    createdYear: "2000",
-    image: {
-      url: "assets/home3.jpg",
-      alt: "alalla",
-    },
-  },
-  {
-    title: "The Enigma Card",
-    subTitle: "sub card 3",
-    description:
-      "When a group of friends is catapulted through time, they must navigate different eras to find their way back home.",
-    phone: "0500000000",
-    createdYear: "2000",
-    image: {
-      url: "assets/home4.jpg",
-      alt: "alalla",
-    },
-  },
-  {
-    title: "Lost in Time",
-    subTitle: "sub card 3",
-    description:
-      "When a group of friends is catapulted through time, they must navigate different eras to find their way back home.",
-    phone: "0500000000",
-    createdYear: "2000",
-    image: {
-      url: "assets/slide1.png",
-      alt: "alalla",
-    },
-  },
-  {
-    title: "Jumbo Queen",
-    subTitle: "sub card 3",
-    description:
-      "Witness the courageous battle of a brave queen leading her people against towering giants.",
-    phone: "0500000000",
-    createdYear: "2000",
-    image: {
-      url: "assets/slide3.jpg",
       alt: "alalla",
     },
   },
