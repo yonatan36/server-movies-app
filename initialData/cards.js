@@ -7,7 +7,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:3000/assets/slide2.jpg",
+      url: "/public/assets/slide2.jpg",
       alt: "alalla",
     },
   },
@@ -19,7 +19,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:3000/assets/u1.jpg",
+      url: "/assets/u1.jpg",
       alt: "alalla",
     },
   },
@@ -31,7 +31,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:3000/assets/u6.png",
+      url: "/assets/u6.png",
       alt: "alalla",
     },
   },
@@ -43,7 +43,7 @@ const cards = [
     phone: "0500000000",
     createdYear: "2000",
     image: {
-      url: "http://localhost:3000/assets/u3.jpg",
+      url: "/assets/u3.jpg",
       alt: "alalla",
     },
   },
@@ -56,7 +56,7 @@ const cards = [
     createdYear: "2000",
 
     image: {
-      url: "http://localhost:3000/assets/u4.jpg",
+      url: "/assets/u4.jpg",
       alt: "alalla",
     },
   },
